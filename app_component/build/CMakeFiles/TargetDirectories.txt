@@ -1,0 +1,3 @@
+C:/Users/am442/Downloads/Working/app_component/build/CMakeFiles/app_component.elf.dir
+C:/Users/am442/Downloads/Working/app_component/build/CMakeFiles/edit_cache.dir
+C:/Users/am442/Downloads/Working/app_component/build/CMakeFiles/rebuild_cache.dir

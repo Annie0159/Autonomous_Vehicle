@@ -1,0 +1,1120 @@
+15:17:58 INFO  : updated workspace path: C:\Users\am442\Downloads\Working
+15:17:58 INFO  : Platform platform creation started.
+15:17:58 INFO  : Using sdt generation script from C:\Xilinx\2025.1.1\Vitis\vitis-server\scripts\platformutil.tcl
+15:17:58 INFO  : cmd.exe, /C, sdtgen.bat C:\Xilinx\2025.1.1\Vitis\vitis-server\scripts\platformutil.tcl C:\Users\am442\Downloads\Working\base_soc_wrapper.xsa C:\Users\am442\Downloads\Working\platform\hw\sdt
+15:17:59 INFO  : Embedded Template List generated successfully
+15:17:59 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\Xilinx\2025.1.1\Vitis\data\embeddedsw
+15:18:02 INFO  : [INFO]: Initializing repositories
+15:18:02 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+15:18:02 INFO  : Successfully created repository data at C:\Users\am442\Downloads\Working/_ide\.wsdata
+15:18:02 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\am442\AppData\Local\Temp\rigel_lopper_am44214589484362366846726 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:03 INFO  : Embedded Template List generated successfully
+15:18:05 INFO  : -xsa C:\Users\am442\Downloads\Working\base_soc_wrapper.xsa
+15:18:05 INFO  : -dir C:\Users\am442\Downloads\Working\platform\hw\sdt
+15:18:05 INFO  : -board_dts 
+15:18:05 INFO  : -include_dts 
+15:18:05 INFO  : -repo C:/Xilinx/2025.1.1/Vitis/data/system-device-tree-xlnx
+15:18:05 INFO  : -zocl disable
+15:18:05 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/2025.1.1/Vitis/data/embeddedsw) loading 0 seconds
+15:18:05 INFO  : SDT generated successfully
+15:18:05 INFO  : Lopper command for cpu List generation: lopper.bat --enhanced --werror -f -O C:\Users\am442\Downloads\Working\.rigel_lopper -i lop-cpu-oslist.dts C:\Users\am442\Downloads\Working\platform\hw\sdt\system-top.dts
+15:18:05 INFO  : cmd.exe, /C, lopper.bat --enhanced --werror -f -O C:\Users\am442\Downloads\Working\.rigel_lopper -i lop-cpu-oslist.dts C:\Users\am442\Downloads\Working\platform\hw\sdt\system-top.dts
+15:18:06 INFO  : CPU List generated successfully
+15:18:06 INFO  : SDT generated successfully.
+15:18:06 INFO  : created .gitignore file for the project C:\Users\am442\Downloads\Working\platform
+15:18:06 INFO  : lopper command to generate BSP :empyro.bat create_bsp -w C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp -p microblaze_0 -o standalone -s C:\Users\am442\Downloads\Working\platform\hw\sdt\system-top.dts -t empty_application -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:06 INFO  : cmd.exe, /C, empyro.bat create_bsp -w C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp -p microblaze_0 -o standalone -s C:\Users\am442\Downloads\Working\platform\hw\sdt\system-top.dts -t empty_application -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:20 INFO  : [INFO]: Starting domain creation
+15:18:20 INFO  : [INFO]: Found HLS driver within SDT, copying the sources
+15:18:20 INFO  : [INFO]: Generating Domain-specific DTS for microblaze_0
+15:18:20 INFO  : [INFO]: Generating required metadata from domain specific DT
+15:18:20 INFO  : [INFO]: Successfully created Domain at C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:18:20 INFO  : Successfully Generated Domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:18:20 INFO  : Domain standalone_microblaze_0 added successfully.
+15:18:20 INFO  : Platform creation finished successfully.
+15:18:20 INFO  : Platform Quick Build initiated.
+15:18:20 INFO  : Generating Export directory
+15:18:20 INFO  : Generated platform metadata for creating application(s) based on platform platform.
+15:18:32 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t empty_application -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:34 INFO  : Successfully validated template empty_application
+15:18:44 INFO  : lopper command to create baremetal application :empyro.bat create_app --src_dir C:\Users\am442\Downloads\Working\app_component\src -t empty_application -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -n app_component -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:44 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t empty_application -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:45 INFO  : Successfully validated template empty_application
+15:18:45 INFO  : cmd.exe, /C, empyro.bat create_app --src_dir C:\Users\am442\Downloads\Working\app_component\src -t empty_application -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -n app_component -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+15:18:49 INFO  : [INFO]: Generating Linker script for empty_application
+15:18:49 INFO  : [INFO]: Successfully Created Application sources at C:/Users/am442/Downloads/Working/app_component/src
+15:18:49 INFO  : Successfully created Application C:\Users\am442\Downloads\Working\app_component\src
+15:18:49 INFO  : The hardware specification used by project 'C:\Users\am442\Downloads\Working\app_component' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:18:49 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:18:49 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:18:49 INFO  : created .gitignore file for the project C:\Users\am442\Downloads\Working\app_component
+15:19:13 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:19:13 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:13 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:13 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:14 INFO  : Domain reconfigured successfully
+15:19:14 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:14 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:14 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:19 INFO  : Domain build successfully
+15:19:19 INFO  : Generating Export directory
+15:19:20 INFO  : Platform Build Finished successfully.
+15:19:20 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:20 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:20 INFO  : [INFO]: Retargeting app
+15:19:20 INFO  : [INFO]: Updating link libraries based on new domain
+15:19:20 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:19:20 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:29 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:19:29 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:29 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:29 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:29 INFO  : Domain reconfigured successfully
+15:19:29 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:29 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:29 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:19:31 INFO  : Domain build successfully
+15:19:31 INFO  : Generating Export directory
+15:19:31 INFO  : Platform Build Finished successfully.
+15:19:31 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:31 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:32 INFO  : [INFO]: Retargeting app
+15:19:32 INFO  : [INFO]: Updating link libraries based on new domain
+15:19:32 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:19:32 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:19:46 INFO  : XSDB server has started successfully from frontend.
+15:19:46 INFO  : It has taken  3secs.
+15:19:47 INFO  : Connection to XSDB Server established.
+15:19:47 INFO  : It has taken  1secs.
+15:19:49 INFO  : Done
+15:19:49 INFO  : connect -url tcp:127.0.0.1:3121
+15:19:50 INFO  : bpremove -all
+15:19:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:19:53 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:19:53 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:19:53 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:19:53 INFO  : configparams mdm-detect-bscan-mask 2
+15:19:53 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:19:53 INFO  : rst -system
+15:19:56 INFO  : after 3000
+15:19:57 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:19:57 INFO  : rst -processor
+15:19:57 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:19:57 INFO  : con
+15:19:58 INFO  : Testing the connection for 127.0.0.1
+15:20:32 INFO  : disconnect
+15:20:35 INFO  : connect -url tcp:127.0.0.1:3121
+15:20:35 INFO  : bpremove -all
+15:20:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:20:38 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:20:38 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:20:38 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:20:38 INFO  : configparams mdm-detect-bscan-mask 2
+15:20:38 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:20:38 INFO  : rst -system
+15:20:41 INFO  : after 3000
+15:20:41 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:20:42 INFO  : rst -processor
+15:20:42 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:20:42 INFO  : con
+15:20:43 INFO  : Testing the connection for 127.0.0.1
+15:20:56 INFO  : disconnect
+15:21:01 INFO  : connect -url tcp:127.0.0.1:3121
+15:21:01 INFO  : bpremove -all
+15:21:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:21:05 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:21:05 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:21:05 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:21:05 INFO  : configparams mdm-detect-bscan-mask 2
+15:21:05 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:21:05 INFO  : rst -system
+15:21:08 INFO  : after 3000
+15:21:08 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:21:08 INFO  : rst -processor
+15:21:09 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:21:09 INFO  : con
+15:21:10 INFO  : Testing the connection for 127.0.0.1
+15:22:11 INFO  : disconnect
+15:22:13 INFO  : connect -url tcp:127.0.0.1:3121
+15:22:13 INFO  : bpremove -all
+15:22:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:22:16 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:22:16 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:22:17 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:22:17 INFO  : configparams mdm-detect-bscan-mask 2
+15:22:17 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:22:17 INFO  : rst -system
+15:22:20 INFO  : after 3000
+15:22:20 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:22:20 INFO  : rst -processor
+15:22:20 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:22:20 INFO  : con
+15:22:21 INFO  : Testing the connection for 127.0.0.1
+15:24:01 INFO  : disconnect
+15:24:07 INFO  : connect -url tcp:127.0.0.1:3121
+15:24:07 INFO  : bpremove -all
+15:24:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:24:11 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:24:11 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:24:11 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:24:11 INFO  : configparams mdm-detect-bscan-mask 2
+15:24:11 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:24:11 INFO  : rst -system
+15:24:14 INFO  : after 3000
+15:24:14 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:24:14 INFO  : rst -processor
+15:24:14 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:24:14 INFO  : con
+15:24:15 INFO  : Testing the connection for 127.0.0.1
+15:25:02 INFO  : disconnect
+15:25:06 INFO  : connect -url tcp:127.0.0.1:3121
+15:25:06 INFO  : bpremove -all
+15:25:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:25:10 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:25:10 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:25:10 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:25:10 INFO  : configparams mdm-detect-bscan-mask 2
+15:25:10 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:25:10 INFO  : rst -system
+15:25:13 INFO  : after 3000
+15:25:13 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:25:13 INFO  : rst -processor
+15:25:13 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:25:13 INFO  : con
+15:25:14 INFO  : Testing the connection for 127.0.0.1
+15:26:10 INFO  : disconnect
+15:27:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:27:04 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:32:37 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:32:37 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:37 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:37 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:38 INFO  : Domain reconfigured successfully
+15:32:38 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:38 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:38 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:32:41 INFO  : Domain build successfully
+15:32:41 INFO  : Generating Export directory
+15:32:42 INFO  : Platform Build Finished successfully.
+15:32:42 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:32:42 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:32:43 INFO  : [INFO]: Retargeting app
+15:32:43 INFO  : [INFO]: Updating link libraries based on new domain
+15:32:43 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:32:43 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:33:32 INFO  : connect -url tcp:127.0.0.1:3121
+15:33:32 INFO  : bpremove -all
+15:33:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:33:35 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:33:35 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:33:36 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:33:36 INFO  : configparams mdm-detect-bscan-mask 2
+15:33:36 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:33:36 INFO  : rst -system
+15:33:39 INFO  : after 3000
+15:33:39 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:33:39 INFO  : rst -processor
+15:33:39 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:33:39 INFO  : con
+15:33:40 INFO  : Testing the connection for 127.0.0.1
+15:34:14 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:34:14 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:14 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:14 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:15 INFO  : Domain reconfigured successfully
+15:34:15 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:15 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:15 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:34:17 INFO  : Domain build successfully
+15:34:17 INFO  : Generating Export directory
+15:34:18 INFO  : Platform Build Finished successfully.
+15:34:18 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:34:18 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:34:19 INFO  : [INFO]: Retargeting app
+15:34:19 INFO  : [INFO]: Updating link libraries based on new domain
+15:34:19 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:34:19 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:34:25 INFO  : disconnect
+15:34:30 INFO  : connect -url tcp:127.0.0.1:3121
+15:34:30 INFO  : bpremove -all
+15:34:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:34:33 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:34:33 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:34:34 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:34:34 INFO  : configparams mdm-detect-bscan-mask 2
+15:34:34 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:34:34 INFO  : rst -system
+15:34:37 INFO  : after 3000
+15:34:37 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:34:37 INFO  : rst -processor
+15:34:37 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:34:37 INFO  : con
+15:34:38 INFO  : Testing the connection for 127.0.0.1
+15:35:36 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:35:36 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:36 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:36 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:37 INFO  : Domain reconfigured successfully
+15:35:37 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:37 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:37 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:35:39 INFO  : Domain build successfully
+15:35:39 INFO  : Generating Export directory
+15:35:40 INFO  : Platform Build Finished successfully.
+15:35:40 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:35:40 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:35:41 INFO  : [INFO]: Retargeting app
+15:35:41 INFO  : [INFO]: Updating link libraries based on new domain
+15:35:41 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:35:41 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:35:46 INFO  : connect -url tcp:127.0.0.1:3121
+15:35:46 INFO  : bpremove -all
+15:35:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:35:48 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:35:48 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:35:48 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:35:48 INFO  : configparams mdm-detect-bscan-mask 2
+15:35:48 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:35:48 INFO  : rst -system
+15:35:51 INFO  : after 3000
+15:35:51 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:35:51 INFO  : rst -processor
+15:35:51 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:35:51 INFO  : con
+15:35:52 INFO  : Testing the connection for 127.0.0.1
+15:36:08 INFO  : disconnect
+15:36:15 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:36:15 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:15 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:15 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:16 INFO  : Domain reconfigured successfully
+15:36:16 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:16 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:16 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:36:19 INFO  : Domain build successfully
+15:36:19 INFO  : Generating Export directory
+15:36:20 INFO  : Platform Build Finished successfully.
+15:36:20 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:36:20 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:36:22 INFO  : [INFO]: Retargeting app
+15:36:22 INFO  : [INFO]: Updating link libraries based on new domain
+15:36:22 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:36:22 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:37:08 INFO  : connect -url tcp:127.0.0.1:3121
+15:37:08 INFO  : bpremove -all
+15:37:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:37:11 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:37:11 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:37:12 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:37:12 INFO  : configparams mdm-detect-bscan-mask 2
+15:37:12 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:37:12 INFO  : rst -system
+15:37:15 INFO  : after 3000
+15:37:15 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:37:15 INFO  : rst -processor
+15:37:15 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:37:15 INFO  : con
+15:37:16 INFO  : Testing the connection for 127.0.0.1
+15:39:00 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:39:00 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:00 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:00 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:02 INFO  : Domain reconfigured successfully
+15:39:02 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:02 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:02 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:39:04 INFO  : Domain build successfully
+15:39:04 INFO  : Generating Export directory
+15:39:04 INFO  : Platform Build Finished successfully.
+15:39:04 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:39:04 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:39:05 INFO  : [INFO]: Retargeting app
+15:39:05 INFO  : [INFO]: Updating link libraries based on new domain
+15:39:05 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:39:05 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:39:30 INFO  : disconnect
+15:39:46 INFO  : connect -url tcp:127.0.0.1:3121
+15:39:46 INFO  : bpremove -all
+15:39:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:39:50 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:39:50 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:39:50 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:39:50 INFO  : configparams mdm-detect-bscan-mask 2
+15:39:50 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:39:50 INFO  : rst -system
+15:39:53 INFO  : after 3000
+15:39:53 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:39:54 INFO  : rst -processor
+15:39:54 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:39:54 INFO  : con
+15:39:55 INFO  : Testing the connection for 127.0.0.1
+15:40:48 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:40:48 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:48 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:48 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:49 INFO  : Domain reconfigured successfully
+15:40:49 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:49 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:49 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:40:51 INFO  : Domain build successfully
+15:40:51 INFO  : Generating Export directory
+15:40:52 INFO  : Platform Build Finished successfully.
+15:40:52 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:40:52 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:40:53 INFO  : [INFO]: Retargeting app
+15:40:53 INFO  : [INFO]: Updating link libraries based on new domain
+15:40:53 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:40:53 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:41:00 INFO  : connect -url tcp:127.0.0.1:3121
+15:41:00 INFO  : bpremove -all
+15:41:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:41:02 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:41:02 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:41:02 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:41:02 INFO  : configparams mdm-detect-bscan-mask 2
+15:41:02 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:41:02 INFO  : rst -system
+15:41:05 INFO  : after 3000
+15:41:05 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:41:05 INFO  : rst -processor
+15:41:05 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:41:05 INFO  : con
+15:41:06 INFO  : Testing the connection for 127.0.0.1
+15:41:35 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:41:35 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:42:18 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:42:18 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:43:12 INFO  : disconnect
+15:45:23 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:45:23 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:49:57 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:49:57 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:49:57 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:49:57 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:49:59 INFO  : Domain reconfigured successfully
+15:49:59 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:49:59 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:49:59 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:50:01 INFO  : Domain build successfully
+15:50:01 INFO  : Generating Export directory
+15:50:01 INFO  : Platform Build Finished successfully.
+15:50:01 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:50:01 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:50:02 INFO  : [INFO]: Retargeting app
+15:50:02 INFO  : [INFO]: Updating link libraries based on new domain
+15:50:02 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:50:02 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:50:35 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:50:35 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:51:34 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:51:34 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:34 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:34 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:35 INFO  : Domain reconfigured successfully
+15:51:35 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:35 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:35 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:51:37 INFO  : Domain build successfully
+15:51:37 INFO  : Generating Export directory
+15:51:38 INFO  : Platform Build Finished successfully.
+15:51:38 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:51:38 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:51:39 INFO  : [INFO]: Retargeting app
+15:51:39 INFO  : [INFO]: Updating link libraries based on new domain
+15:51:39 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:51:39 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:51:54 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:51:54 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:52:06 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:52:06 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:06 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:06 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:08 INFO  : Domain reconfigured successfully
+15:52:08 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:08 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:08 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:52:10 INFO  : Domain build successfully
+15:52:10 INFO  : Generating Export directory
+15:52:10 INFO  : Platform Build Finished successfully.
+15:52:10 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:52:10 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:52:12 INFO  : [INFO]: Retargeting app
+15:52:12 INFO  : [INFO]: Updating link libraries based on new domain
+15:52:12 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:52:12 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:52:16 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:52:16 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:55:23 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+15:55:23 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:23 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:23 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:24 INFO  : Domain reconfigured successfully
+15:55:24 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:24 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:24 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+15:55:27 INFO  : Domain build successfully
+15:55:27 INFO  : Generating Export directory
+15:55:27 INFO  : Platform Build Finished successfully.
+15:55:27 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:55:27 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+15:55:28 INFO  : [INFO]: Retargeting app
+15:55:28 INFO  : [INFO]: Updating link libraries based on new domain
+15:55:28 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+15:55:28 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+15:55:47 INFO  : connect -url tcp:127.0.0.1:3121
+15:55:47 INFO  : bpremove -all
+15:55:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+15:55:50 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+15:55:50 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:55:51 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+15:55:51 INFO  : configparams mdm-detect-bscan-mask 2
+15:55:51 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:55:51 INFO  : rst -system
+15:55:54 INFO  : after 3000
+15:55:54 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+15:55:54 INFO  : rst -processor
+15:55:55 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+15:55:55 INFO  : con
+15:55:56 INFO  : Testing the connection for 127.0.0.1
+15:56:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:56:43 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:57:39 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:57:39 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+15:58:22 INFO  : disconnect
+16:00:58 INFO  : lopper command to regenerate linker script :empyro.bat regen_linker -s C:\Users\am442\Downloads\Working\app_component\src -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0
+16:00:58 INFO  : cmd.exe, /C, empyro.bat regen_linker -s C:\Users\am442\Downloads\Working\app_component\src -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0
+16:01:05 INFO  : [INFO]: Regenerating linker
+16:01:05 INFO  : [INFO]: Generating Linker script for empty_application
+16:01:05 INFO  : -- The C compiler identification is GNU 13.3.0
+16:01:05 INFO  : -- The CXX compiler identification is GNU 13.3.0
+16:01:05 INFO  : -- Detecting C compiler ABI info
+16:01:05 INFO  : -- Detecting C compiler ABI info - done
+16:01:05 INFO  : -- Check for working C compiler: C:/Xilinx/2025.1.1/Vitis/gnu/microblaze/nt/bin/mb-gcc.exe - skipped
+16:01:05 INFO  : -- Detecting C compile features
+16:01:05 INFO  : -- Detecting C compile features - done
+16:01:05 INFO  : -- Detecting CXX compiler ABI info
+16:01:05 INFO  : -- Detecting CXX compiler ABI info - done
+16:01:05 INFO  : -- Check for working CXX compiler: C:/Xilinx/2025.1.1/Vitis/gnu/microblaze/nt/bin/mb-g++.exe - skipped
+16:01:05 INFO  : -- Detecting CXX compile features
+16:01:05 INFO  : -- Detecting CXX compile features - done
+16:01:05 INFO  : -- Configuring done
+16:01:05 INFO  : -- Generating done
+16:01:05 INFO  : -- Build files have been written to: C:/Users/am442/Downloads/Working/app_component/src/linker_build
+16:01:05 INFO  : [INFO]: Successfully regenerated linker script at C:\Users\am442\Downloads\Working\app_component\src
+16:01:05 INFO  : Linker script reset successfully
+16:01:18 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:01:18 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:01:19 INFO  : [INFO]: Retargeting app
+16:01:19 INFO  : [INFO]: Updating link libraries based on new domain
+16:01:19 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:01:23 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:01:23 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:23 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:23 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:24 INFO  : Domain reconfigured successfully
+16:01:24 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:24 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:24 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:01:26 INFO  : Domain build successfully
+16:01:26 INFO  : Generating Export directory
+16:01:27 INFO  : Platform Build Finished successfully.
+16:01:27 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:01:27 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:01:28 INFO  : [INFO]: Retargeting app
+16:01:28 INFO  : [INFO]: Updating link libraries based on new domain
+16:01:28 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:01:28 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:02:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:02:06 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:11:02 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:11:02 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:02 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:02 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:03 INFO  : Domain reconfigured successfully
+16:11:03 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:03 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:03 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:11:06 INFO  : Domain build successfully
+16:11:06 INFO  : Generating Export directory
+16:11:07 INFO  : Platform Build Finished successfully.
+16:11:07 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:11:07 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:11:08 INFO  : [INFO]: Retargeting app
+16:11:08 INFO  : [INFO]: Updating link libraries based on new domain
+16:11:08 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:11:08 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:11:52 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:11:52 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:12:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:45 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t srec_spi_bootloader -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+16:16:50 INFO  : Successfully validated template srec_spi_bootloader
+16:16:54 INFO  : lopper command to create baremetal application :empyro.bat create_app --src_dir C:\Users\am442\Downloads\Working\srec_spi_bootloader\src -t srec_spi_bootloader -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -n srec_spi_bootloader -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+16:16:54 INFO  : cmd.exe, /C, empyro.bat validate_bsp -t srec_spi_bootloader -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+16:16:57 INFO  : Successfully validated template srec_spi_bootloader
+16:16:57 INFO  : cmd.exe, /C, empyro.bat create_app --src_dir C:\Users\am442\Downloads\Working\srec_spi_bootloader\src -t srec_spi_bootloader -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -n srec_spi_bootloader -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+16:17:04 INFO  : [INFO]: Generating Hardware Metadata for srec_spi_bootloader
+16:17:04 INFO  : [INFO]: Generating Linker script for srec_spi_bootloader
+16:17:04 INFO  : [INFO]: Successfully Created Application sources at C:/Users/am442/Downloads/Working/srec_spi_bootloader/src
+16:17:04 INFO  : Successfully created Application C:\Users\am442\Downloads\Working\srec_spi_bootloader\src
+16:17:04 INFO  : The hardware specification used by project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+16:17:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:17:04 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:17:04 INFO  : created .gitignore file for the project C:\Users\am442\Downloads\Working\srec_spi_bootloader
+16:19:45 INFO  : lopper command to regenerate linker script :empyro.bat regen_linker -s C:\Users\am442\Downloads\Working\app_component\src -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0
+16:19:45 INFO  : cmd.exe, /C, empyro.bat regen_linker -s C:\Users\am442\Downloads\Working\app_component\src -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0
+16:19:50 INFO  : [INFO]: Regenerating linker
+16:19:50 INFO  : [INFO]: Generating Linker script for empty_application
+16:19:50 INFO  : -- The C compiler identification is GNU 13.3.0
+16:19:50 INFO  : -- The CXX compiler identification is GNU 13.3.0
+16:19:50 INFO  : -- Detecting C compiler ABI info
+16:19:50 INFO  : -- Detecting C compiler ABI info - done
+16:19:50 INFO  : -- Check for working C compiler: C:/Xilinx/2025.1.1/Vitis/gnu/microblaze/nt/bin/mb-gcc.exe - skipped
+16:19:50 INFO  : -- Detecting C compile features
+16:19:50 INFO  : -- Detecting C compile features - done
+16:19:50 INFO  : -- Detecting CXX compiler ABI info
+16:19:50 INFO  : -- Detecting CXX compiler ABI info - done
+16:19:50 INFO  : -- Check for working CXX compiler: C:/Xilinx/2025.1.1/Vitis/gnu/microblaze/nt/bin/mb-g++.exe - skipped
+16:19:50 INFO  : -- Detecting CXX compile features
+16:19:50 INFO  : -- Detecting CXX compile features - done
+16:19:50 INFO  : -- Configuring done
+16:19:50 INFO  : -- Generating done
+16:19:50 INFO  : -- Build files have been written to: C:/Users/am442/Downloads/Working/app_component/src/linker_build
+16:19:50 INFO  : [INFO]: Successfully regenerated linker script at C:\Users\am442\Downloads\Working\app_component\src
+16:19:50 INFO  : Linker script reset successfully
+16:23:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:23:11 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:25:05 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:25:05 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:05 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:05 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:06 INFO  : Domain reconfigured successfully
+16:25:06 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:06 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:06 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:25:09 INFO  : Domain build successfully
+16:25:09 INFO  : Generating Export directory
+16:25:10 INFO  : Platform Build Finished successfully.
+16:25:10 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\srec_spi_bootloader\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\srec_spi_bootloader\build
+16:25:10 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\srec_spi_bootloader\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\srec_spi_bootloader\build
+16:25:12 INFO  : [INFO]: Retargeting app
+16:25:12 INFO  : [INFO]: Updating link libraries based on new domain
+16:25:12 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\srec_spi_bootloader\src
+16:25:12 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\srec_spi_bootloader\src -b c:\Users\am442\Downloads\Working\srec_spi_bootloader\build
+16:25:27 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:25:27 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:26:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:26:21 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+16:27:13 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:27:13 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:27:18 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:27:18 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:44:08 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:44:08 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:08 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:08 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:09 INFO  : Domain reconfigured successfully
+16:44:09 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:09 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:09 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:44:11 INFO  : Domain build successfully
+16:44:11 INFO  : Generating Export directory
+16:44:12 INFO  : Platform Build Finished successfully.
+16:44:12 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:44:12 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:44:13 INFO  : [INFO]: Retargeting app
+16:44:13 INFO  : [INFO]: Updating link libraries based on new domain
+16:44:13 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:44:13 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:44:31 INFO  : connect -url tcp:127.0.0.1:3121
+16:44:31 INFO  : bpremove -all
+16:44:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:44:36 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+16:44:36 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:44:36 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+16:44:36 INFO  : configparams mdm-detect-bscan-mask 2
+16:44:36 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:44:36 INFO  : rst -system
+16:44:39 INFO  : after 3000
+16:44:39 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:44:39 INFO  : rst -processor
+16:44:39 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+16:44:39 INFO  : con
+16:44:40 INFO  : Testing the connection for 127.0.0.1
+16:45:14 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:45:14 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:14 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:14 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:15 INFO  : Domain reconfigured successfully
+16:45:15 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:15 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:15 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:45:17 INFO  : disconnect
+16:45:17 INFO  : Domain build successfully
+16:45:17 INFO  : Generating Export directory
+16:45:18 INFO  : Platform Build Finished successfully.
+16:45:18 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:45:18 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:45:19 INFO  : [INFO]: Retargeting app
+16:45:19 INFO  : [INFO]: Updating link libraries based on new domain
+16:45:19 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:45:19 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:45:23 INFO  : connect -url tcp:127.0.0.1:3121
+16:45:23 INFO  : bpremove -all
+16:45:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:45:26 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+16:45:26 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:45:26 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+16:45:26 INFO  : configparams mdm-detect-bscan-mask 2
+16:45:26 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:45:26 INFO  : rst -system
+16:45:29 INFO  : after 3000
+16:45:30 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:45:30 INFO  : rst -processor
+16:45:30 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+16:45:30 INFO  : con
+16:45:31 INFO  : Testing the connection for 127.0.0.1
+16:46:44 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:46:44 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:44 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:44 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:45 INFO  : Domain reconfigured successfully
+16:46:45 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:45 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:45 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:46:47 INFO  : Domain build successfully
+16:46:47 INFO  : Generating Export directory
+16:46:48 INFO  : Platform Build Finished successfully.
+16:46:48 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:46:48 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:46:49 INFO  : [INFO]: Retargeting app
+16:46:49 INFO  : [INFO]: Updating link libraries based on new domain
+16:46:49 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:46:49 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:46:58 INFO  : disconnect
+16:47:00 INFO  : connect -url tcp:127.0.0.1:3121
+16:47:00 INFO  : bpremove -all
+16:47:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:47:03 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+16:47:03 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:47:03 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+16:47:03 INFO  : configparams mdm-detect-bscan-mask 2
+16:47:03 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:47:03 INFO  : rst -system
+16:47:06 INFO  : after 3000
+16:47:06 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:47:06 INFO  : rst -processor
+16:47:07 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+16:47:07 INFO  : con
+16:47:08 INFO  : Testing the connection for 127.0.0.1
+16:47:44 INFO  : disconnect
+16:47:58 INFO  : connect -url tcp:127.0.0.1:3121
+16:47:58 INFO  : bpremove -all
+16:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:48:01 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+16:48:01 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:48:02 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+16:48:02 INFO  : configparams mdm-detect-bscan-mask 2
+16:48:02 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:48:02 INFO  : rst -system
+16:48:05 INFO  : after 3000
+16:48:05 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+16:48:05 INFO  : rst -processor
+16:48:05 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+16:48:05 INFO  : con
+16:48:06 INFO  : Testing the connection for 127.0.0.1
+16:49:55 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:49:55 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:50:38 INFO  : disconnect
+16:51:32 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:51:32 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:03 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:03 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:31 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:31 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+16:52:35 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+16:52:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:52:43 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+16:58:56 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+16:58:56 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:58:56 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:58:56 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:58:58 INFO  : Domain reconfigured successfully
+16:58:58 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:58:58 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:58:58 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+16:59:00 INFO  : Domain build successfully
+16:59:00 INFO  : Generating Export directory
+16:59:00 INFO  : Platform Build Finished successfully.
+16:59:00 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:59:00 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+16:59:01 INFO  : [INFO]: Retargeting app
+16:59:01 INFO  : [INFO]: Updating link libraries based on new domain
+16:59:01 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+16:59:01 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+16:59:25 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+16:59:25 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:00:14 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:00:14 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:01:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:01:09 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:01:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+17:01:31 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+17:01:42 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:01:42 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:13:01 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+17:13:01 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:01 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:01 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:02 INFO  : Domain reconfigured successfully
+17:13:02 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:02 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:02 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:13:06 INFO  : Domain build successfully
+17:13:06 INFO  : Generating Export directory
+17:13:06 INFO  : Platform Build Finished successfully.
+17:13:07 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:13:07 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:13:08 INFO  : [INFO]: Retargeting app
+17:13:08 INFO  : [INFO]: Updating link libraries based on new domain
+17:13:08 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+17:13:08 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+17:13:16 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:13:16 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:13:37 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:13:37 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:14:08 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:14:08 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:14:41 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:14:41 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:15:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+17:15:05 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+17:15:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:15:09 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:15:15 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:15:15 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:31:52 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+17:31:52 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:52 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:52 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:53 INFO  : Domain reconfigured successfully
+17:31:53 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:53 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:53 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:31:55 INFO  : Domain build successfully
+17:31:55 INFO  : Generating Export directory
+17:31:55 INFO  : Platform Build Finished successfully.
+17:31:55 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:31:55 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:31:57 INFO  : [INFO]: Retargeting app
+17:31:57 INFO  : [INFO]: Updating link libraries based on new domain
+17:31:57 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+17:31:57 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+17:32:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:32:07 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:32:20 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:32:20 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:33:11 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:33:11 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:33:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+17:33:38 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+17:33:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:33:43 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:52:30 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+17:52:30 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:30 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:30 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:31 INFO  : Domain reconfigured successfully
+17:52:31 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:31 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:31 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+17:52:33 INFO  : Domain build successfully
+17:52:33 INFO  : Generating Export directory
+17:52:33 INFO  : Platform Build Finished successfully.
+17:52:33 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:52:33 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+17:52:35 INFO  : [INFO]: Retargeting app
+17:52:35 INFO  : [INFO]: Updating link libraries based on new domain
+17:52:35 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+17:52:35 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+17:52:45 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:52:45 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+17:53:41 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:53:41 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:54:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+17:54:17 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+17:54:37 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+17:54:37 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:01:33 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+18:01:33 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:33 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:33 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:34 INFO  : Domain reconfigured successfully
+18:01:34 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:34 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:34 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:01:36 INFO  : Domain build successfully
+18:01:36 INFO  : Generating Export directory
+18:01:37 INFO  : Platform Build Finished successfully.
+18:01:37 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:01:37 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:01:38 INFO  : [INFO]: Retargeting app
+18:01:38 INFO  : [INFO]: Updating link libraries based on new domain
+18:01:38 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+18:01:38 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+18:01:46 INFO  : connect -url tcp:127.0.0.1:3121
+18:01:46 INFO  : bpremove -all
+18:01:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+18:01:48 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+18:01:48 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:01:48 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+18:01:48 INFO  : configparams mdm-detect-bscan-mask 2
+18:01:48 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:01:48 INFO  : rst -system
+18:01:51 INFO  : after 3000
+18:01:51 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:01:51 INFO  : rst -processor
+18:01:52 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+18:01:52 INFO  : con
+18:01:53 INFO  : Testing the connection for 127.0.0.1
+18:02:46 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+18:02:46 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:46 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:46 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:47 INFO  : Domain reconfigured successfully
+18:02:47 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:47 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:47 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:02:49 INFO  : Domain build successfully
+18:02:49 INFO  : Generating Export directory
+18:02:49 INFO  : Platform Build Finished successfully.
+18:02:49 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:02:49 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:02:51 INFO  : [INFO]: Retargeting app
+18:02:51 INFO  : [INFO]: Updating link libraries based on new domain
+18:02:51 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+18:02:51 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+18:02:51 INFO  : disconnect
+18:02:56 INFO  : connect -url tcp:127.0.0.1:3121
+18:02:56 INFO  : bpremove -all
+18:02:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+18:02:59 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/app_component/_ide/bitstream/base_soc_wrapper.bit"
+18:02:59 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:03:00 INFO  : loadhw -hw C:/Users/am442/Downloads/Working/platform/export/platform/hw/base_soc_wrapper.xsa  -regs
+18:03:00 INFO  : configparams mdm-detect-bscan-mask 2
+18:03:00 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:03:00 INFO  : rst -system
+18:03:03 INFO  : after 3000
+18:03:03 INFO  : targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}
+18:03:03 INFO  : rst -processor
+18:03:03 INFO  : dow C:/Users/am442/Downloads/Working/app_component/build/app_component.elf
+18:03:03 INFO  : con
+18:03:04 INFO  : Testing the connection for 127.0.0.1
+18:03:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+18:03:22 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+18:03:46 INFO  : disconnect
+18:04:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:04:06 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:04:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+18:04:31 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+18:04:39 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:04:39 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:15:16 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+18:15:16 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:16 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:16 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:17 INFO  : Domain reconfigured successfully
+18:15:17 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:17 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:17 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+18:15:20 INFO  : Domain build successfully
+18:15:20 INFO  : Generating Export directory
+18:15:21 INFO  : Platform Build Finished successfully.
+18:15:21 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:15:21 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+18:15:23 INFO  : [INFO]: Retargeting app
+18:15:23 INFO  : [INFO]: Updating link libraries based on new domain
+18:15:23 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+18:15:23 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+18:15:35 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+18:15:35 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+18:17:02 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:17:02 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:17:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+18:17:26 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+18:17:33 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+18:17:33 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:01:51 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+09:01:51 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:51 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:51 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:52 INFO  : Domain reconfigured successfully
+09:01:52 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:52 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:52 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:01:56 INFO  : Domain build successfully
+09:01:56 INFO  : Generating Export directory
+09:01:57 INFO  : Platform Build Finished successfully.
+09:01:57 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:01:57 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:01:58 INFO  : [INFO]: Retargeting app
+09:01:58 INFO  : [INFO]: Updating link libraries based on new domain
+09:01:58 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+09:01:58 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+09:03:27 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+09:03:27 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:27 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:27 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:29 INFO  : Domain reconfigured successfully
+09:03:29 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:29 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:29 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:03:31 INFO  : Domain build successfully
+09:03:31 INFO  : Generating Export directory
+09:03:31 INFO  : Platform Build Finished successfully.
+09:03:31 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:03:31 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:03:32 INFO  : [INFO]: Retargeting app
+09:03:32 INFO  : [INFO]: Updating link libraries based on new domain
+09:03:32 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+09:03:32 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+09:04:35 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:04:35 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:05:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:05:36 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+09:06:11 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+09:06:16 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:06:16 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:44:04 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+09:44:04 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:04 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:04 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:06 INFO  : Domain reconfigured successfully
+09:44:06 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:06 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:06 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:44:09 INFO  : Domain build successfully
+09:44:09 INFO  : Generating Export directory
+09:44:10 INFO  : Platform Build Finished successfully.
+09:44:10 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:44:10 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:44:12 INFO  : [INFO]: Retargeting app
+09:44:12 INFO  : [INFO]: Updating link libraries based on new domain
+09:44:12 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+09:44:12 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+09:44:36 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:44:36 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:45:01 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:45:01 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:45:41 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+09:45:41 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:41 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:41 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:43 INFO  : Domain reconfigured successfully
+09:45:43 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:43 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:43 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:45:45 INFO  : Domain build successfully
+09:45:45 INFO  : Generating Export directory
+09:45:45 INFO  : Platform Build Finished successfully.
+09:45:45 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:45:45 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:45:46 INFO  : [INFO]: Retargeting app
+09:45:46 INFO  : [INFO]: Updating link libraries based on new domain
+09:45:46 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+09:45:46 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+09:45:55 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:45:55 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:47:01 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:47:01 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:47:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+09:47:27 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+09:47:50 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:47:50 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:52:11 INFO  : BSP build will be initiated for Domain standalone_microblaze_0
+09:52:11 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:11 INFO  : lopper command to reconfigure BSP :empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:11 INFO  : cmd.exe, /C, empyro.bat reconfig_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:12 INFO  : Domain reconfigured successfully
+09:52:12 INFO  : Generating BSP for the domain C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:12 INFO  : lopper command to build BSP :empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:12 INFO  : cmd.exe, /C, empyro.bat build_bsp -d C:\Users\am442\Downloads\Working\platform\microblaze_0\standalone_microblaze_0\bsp
+09:52:14 INFO  : Domain build successfully
+09:52:14 INFO  : Generating Export directory
+09:52:15 INFO  : Platform Build Finished successfully.
+09:52:15 INFO  : lopper command to retarget baremetal application :empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:52:15 INFO  : cmd.exe, /C, empyro.bat retarget_app -s c:\Users\am442\Downloads\Working\app_component\src -d C:\Users\am442\Downloads\Working\platform\export\platform\sw\standalone_microblaze_0 -b c:\Users\am442\Downloads\Working\app_component\build
+09:52:16 INFO  : [INFO]: Retargeting app
+09:52:16 INFO  : [INFO]: Updating link libraries based on new domain
+09:52:16 INFO  : Successfully retargeted Application c:\Users\am442\Downloads\Working\app_component\src
+09:52:16 INFO  : cmd.exe, /C, empyro.bat build_app -s c:\Users\am442\Downloads\Working\app_component\src -b c:\Users\am442\Downloads\Working\app_component\build
+09:52:31 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:52:31 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:52:47 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:52:47 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:54:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:54:09 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:54:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:34 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:54:34 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\app_component\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\app_component'.
+09:54:39 ERROR : Program device failed Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+09:55:25 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:55:25 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:55:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319BCC3F9A" && level==0 && jtag_device_ctx=="jsn-Arty A7-100T-210319BCC3F9A-13631093-0"}' command is executed.
+09:55:49 INFO  : Device configured successfully with "C:/Users/am442/Downloads/Working/srec_spi_bootloader/_ide/bitstream/download.bit"
+09:56:02 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\bitstream' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+09:56:02 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\am442\Downloads\Working\srec_spi_bootloader\_ide\psinit' in project 'C:\Users\am442\Downloads\Working\srec_spi_bootloader'.
+10:51:44 INFO  : connection terminated
+10:51:44 INFO  : connection terminated
+10:51:44 INFO  : scheduling shutdown timer for 2 seconds ...
+10:51:44 INFO  : scheduling shutdown timer for 2 seconds ...
+10:51:46 INFO  : Terminating Vitis C++ Server
+10:51:46 INFO  : Terminating Vitis C++ Server
+10:51:46 INFO  : Vitis C++ Server terminated
+10:51:46 INFO  : Vitis C++ Server terminated
+14:37:05 INFO  : updated workspace path: C:\Users\am442\Downloads\Working
+14:37:05 INFO  : created .gitignore file for the project C:\Users\am442\Downloads\Working
+14:37:09 INFO  : [INFO]: Initializing repositories
+14:37:09 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:37:09 INFO  : Successfully created repository data at C:\Users\am442\AppData\Local\Temp\rigel_lopper_am44210005131744962052175
+14:37:09 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\am442\AppData\Local\Temp\rigel_lopper_am44214682297898726288891 -r C:\Users\am442\AppData\Local\Temp\rigel_lopper_am44210005131744962052175\.repo.yaml
+14:37:10 INFO  : Embedded Template List generated successfully
+14:37:10 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\am442\AppData\Local\Temp\rigel_lopper_am4428954088181335581267 -r C:\Users\am442\Downloads\Working\_ide\.wsdata\.repo.yaml
+14:37:12 INFO  : Embedded Template List generated successfully
+14:37:38 INFO  : connection terminated
+14:37:38 INFO  : connection terminated
+14:37:38 INFO  : scheduling shutdown timer for 2 seconds ...
+14:37:40 INFO  : Terminating Vitis C++ Server
+14:37:40 INFO  : Vitis C++ Server terminated
